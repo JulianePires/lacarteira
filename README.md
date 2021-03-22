@@ -32,7 +32,7 @@
 
 ```bash
 # Clone this project
-$ git clone https://github.com/JulianePires/mobix-challenge
+$ git clone https://github.com/JulianePires/lacarteira
 
 # Access
 $ cd mobix-challenge
@@ -45,3 +45,23 @@ $ yarn start
 
 # The server will initialize in the <http://localhost:3000>
 ```
+
+## Logbook
+
+### Criando a aplicação com create-react-app
+
+--> A criação de aplicações em React do zero, com as configurações do Webpack e do Babel e de todo o ambiente de desenvolvimento é bem interessante, pois deixa o ambiente customizável de acordo com as necessidades do seu projeto. Mas em alguns casos, o create-react-app facilita muito a vida por trazer boa parte dessas definições previamente configuradas. Portanto, utilizamos o seguinte comando para a criação da aplicação:
+
+```
+$ yarn create react-app lacarteira --template typescript 
+```
+
+Note que o template do typescript foi utilizado, pois iremos utilizá-lo na linguagem tipada.
+
+### Licença
+
+--> Por ser uma aplicação a ser utilizada posteriormente, a escolha da licensa foi a MIT, que torna disponível o uso comercial e privado, além de modificação e distribuição da aplicação, mas detém os direitos autorais.
+
+### Styled-components
+
+--> A escolha do styled-components vem pela facilidade de customização de estilo através da criação de componentes estilizados utilizando javascript, é um recurso super interessante e poderoso, já que reduz o uso de classes e id's para determinação de estilos, problemas de acesso aos arquivos CSS e torna a legibilidade do código muito mais fácil de interpretar.

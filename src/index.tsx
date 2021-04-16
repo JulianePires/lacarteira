@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createServer, Model } from "miragejs";
 import { App } from "./App";
+import { TransactionsProvider } from "./hooks/useTransactions";
+
 
 createServer({
   models: {
@@ -10,7 +12,7 @@ createServer({
 
   seeds(server) {
     server.db.loadData({
-      transactions: [{}],
+      transactions: [],
     });
   },
 
@@ -29,8 +31,10 @@ createServer({
 });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <TransactionsProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </TransactionsProvider>,
   document.getElementById("root")
 );

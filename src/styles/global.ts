@@ -12,11 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     --text-title: #fff;
     --text: #c9c9c9;
   }
-  
-  * {
-    padding: 0;
-    margin: 0;
+
+  *, *::after, *::before {
     box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
   }
   
   html{

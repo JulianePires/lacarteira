@@ -47,12 +47,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     setTransactions((oldState) => [...oldState, transaction]);
   }
 
-  // function handleRemoveTransaction(transaction: Transaction) {
-  //   const filtered = transactions.filter(
-  //     (trans) => trans.id !== transaction.id
-  //   );
-  //   setTransactions(filtered);
-  // }
+
 
   return (
     <TransactionsContext.Provider value={{ transactions, createTransaction }}>
